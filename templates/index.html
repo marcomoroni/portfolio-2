@@ -5,19 +5,29 @@
   <h1 class="ciao">Ciao<span id="typewriter"></span></h1>
   <p>Programmer &amp; UI/UX designer.</p>
   <p>Currently working at <a href="https://mxt.co.uk/">MXT</a>, London.</p>
-  <p>I like games, UI/UX, analytic philosophy, surrealism.</p>
+  <p>Happy with games, UI/UX, analytic philosophy, surrealism.</p>
   <div class="contacts">
     <div >marcomoroni394@gmail.com</div>
     <div class="contacts-divider">·</div>
     <div class="no-user-select"><a href="https://github.com/marcomoroni/">GitHub</a></div>
     <div class="contacts-divider">·</div>
-    <div class="no-user-select"><a href="https://www.linkedin.com/in/m-moroni">LinkedIn</a></div>
+    <div class="no-user-select"><a href="https://www.linkedin.com/in/m-moroni/">LinkedIn</a></div>
     <div class="contacts-divider">·</div>
     <div class="no-user-select"><a href="https://marcomoroni.itch.io/">itch.io</a></div>
   </div>
   <p>Here are a few things I've been doing:</p>
 </div>
-{% for page in section.pages %}
-  <h2><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>
-{% endfor %}
+<div class="p-e-list">
+  {% for page in section.pages %}
+    <a class="p-e-l-e-link" href="{{ page.permalink | safe }}">
+      {% if page.extra.opt_preview_img %}
+      <div class="p-e-l-e-image" style="background-image: url({{ page.extra.opt_preview_img }});"></div>
+      <div class="p-e-l-e-image-overlay"></div>
+      {% endif %}
+      <div class="p-e-l-e-header-container">
+        {{ macros::portfolio_entry_header(page=page, semantic_title_element="h2") }}
+      </div>
+    </a>
+  {% endfor %}
+</div>
 {% endblock content %}

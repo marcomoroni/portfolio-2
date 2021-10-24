@@ -7,9 +7,15 @@
 }
 
 @font-face {
-	font-family: 'ReadexPro';
+	font-family: 'Readex Pro';
 	src: url(assets/fonts/ReadexPro.ttf) format("truetype-variations");
 }
+
+@font-face {
+	font-family: 'Overpass Mono';
+	src: url(assets/fonts/OverpassMono-SemiBold.ttf) format("truetype-variations");
+}
+
 
 
 
@@ -23,10 +29,10 @@
     all: unset;
     display: revert;
     color: var(--color-primary);
-    font-family: 'ReadexPro', sans-serif;
+    font-family: 'Readex Pro', sans-serif;
     font-variation-settings: 'wght' 300;
     font-feature-settings: 'ss03' 1;
-    font-size: 14.2px;
+    font-size: 14.5px;
     line-height: 1.8;
 }
 
@@ -64,6 +70,7 @@ span {
 
 
 
+
 ::selection {
     background-color: var(--color-selection);
 }
@@ -84,11 +91,6 @@ a:hover {
     transition-duration: 0s;
 }
 
-h1 {
-    font-size: 43px;
-    font-feature-settings: 'ss01' 1, 'ss03' 1;
-}
-
 .container {
     min-width: 600px;
 }
@@ -100,7 +102,7 @@ h1 {
 /* Use `padding` to give a minimum height. */
 .landing-header {
     --v-padding: 300px;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 56px);
     padding-top: var(--v-padding);
     padding-bottom: var(--v-padding);
     display: flex;
@@ -110,6 +112,8 @@ h1 {
 }
 
 .ciao {
+    font-size: 43px;
+    font-feature-settings: 'ss01' 1, 'ss03' 1;
     margin-bottom: 80px;
     user-select: none;
     white-space: pre-wrap;
@@ -128,4 +132,100 @@ h1 {
     margin-left: var(--h-margin);
     margin-right: var(--h-margin);
     user-select: none;
+}
+
+
+
+
+
+/*** Portfolio entries list. ***/
+
+.p-e-list {
+    --gap: 56px;
+    --color-item-background: #f2ece6;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--gap);
+    margin-left: var(--gap);
+    margin-right: var(--gap);
+}
+
+.p-e-l-e-link {
+    position: relative;
+    width: 600px;
+    height: 432px;
+    background-color: var(--color-item-background);
+    border: unset;
+}
+
+.p-e-l-e-header-container {
+    position: absolute;
+    left: 0;
+    top: 96px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.p-e-l-e-header-container .p-e-header-title {
+    text-shadow: 0 0 6px var(--color-item-background);
+}
+
+.p-e-l-e-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.p-e-l-e-image-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-item-background);
+    opacity: 0.93;
+}
+
+
+
+
+
+/*** Portfolio entry header. ***/
+
+.p-e-header {
+    width: 400px;
+}
+
+.p-e-header-tags-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 22px;
+}
+
+.tag {
+    --letter-spacing: 1.8px;
+    --v-padding: 4px;
+    --h-padding: 11px;
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    font-size: 10.2px;
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing);
+    font-variation-settings: 'wght' 360;
+    padding: var(--v-padding) calc(var(--h-padding) - var(--letter-spacing)) var(--v-padding) var(--h-padding);
+}
+
+.p-e-header-title {
+    font-family: 'Overpass Mono', monospace;
+    font-size: 17px;
+    letter-spacing: unset;
 }

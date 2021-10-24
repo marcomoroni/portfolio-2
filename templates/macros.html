@@ -1,0 +1,10 @@
+{% macro portfolio_entry_header(page, semantic_title_element) %}
+<div class="p-e-header">
+  <div class="p-e-header-tags-list">
+    {% for tag in page.extra.tags %}
+    <div class="tag">{{ tag }}</div>
+    {% endfor %}
+  </div>
+  <{{ semantic_title_element | safe }} class="p-e-header-title">{{ page.title }}</{{ semantic_title_element | safe }}>
+</div>
+{% endmacro portfolioentryheader %}
