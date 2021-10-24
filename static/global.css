@@ -140,24 +140,34 @@ a:hover {
 
 /*** Portfolio entries list. ***/
 
+/* Can't use `gap` because I need to add a few elements at the end of the list 
+   and they should have no height. They are used to align the visible entries
+   of the last row to the left in case that row is not full.
+   This method will make additional unwanted margin at the bottom, but this
+   ok because there'll be other content after that, and this content will
+   include this margin when doing its layout. */
+
 .p-e-list {
     --gap: 56px;
+    --element-width: 600px;
     --color-item-background: #f2ece6;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: var(--gap);
-    margin-left: var(--gap);
-    margin-right: var(--gap);
+    margin-left: calc(var(--gap) / 2);
+    margin-right: calc(var(--gap) / 2);
 }
 
 .p-e-l-e-link {
     position: relative;
-    width: 600px;
+    width: var(--element-width);
     height: 432px;
     background-color: var(--color-item-background);
     border: unset;
+    margin-bottom: var(--gap);
+    margin-left: calc(var(--gap) / 2);
+    margin-right: calc(var(--gap) / 2);
 }
 
 .p-e-l-e-header-container {
@@ -191,6 +201,13 @@ a:hover {
     height: 100%;
     background-color: var(--color-item-background);
     opacity: 0.93;
+}
+
+.p-e-adjustment {
+    position: relative;
+    width: var(--element-width);
+    margin-left: calc(var(--gap) / 2);
+    margin-right: calc(var(--gap) / 2);
 }
 
 
