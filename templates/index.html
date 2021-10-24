@@ -1,9 +1,24 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="title">
-  This is my blog made with Zola.
-</h1>
+<div class="landing-header">
+  <h1 class="ciao">
+    Ciao, I'm Marco.
+  </h1>
+  <p>Programmer &amp; UI/UX designer.</p>
+  <p>Currently working at <a href="https://mxt.co.uk/">MXT</a>, London.</p>
+  <p>I like games, UI/UX, analytic philosophy, surrealism.</p>
+  <div class="contacts">
+    <div >marcomoroni394@gmail.com</div>
+    <div class="contacts-divider">·</div>
+    <div class="no-user-select"><a href="https://github.com/marcomoroni/">GitHub</a></div>
+    <div class="contacts-divider">·</div>
+    <div class="no-user-select"><a href="https://www.linkedin.com/in/m-moroni">LinkedIn</a></div>
+    <div class="contacts-divider">·</div>
+    <div class="no-user-select"><a href="https://marcomoroni.itch.io/">itch.io</a></div>
+  </div>
+  <p>Here are a few things I've been doing:</p>
+</div>
 {% for page in section.pages %}
   <h2><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>
 {% endfor %}

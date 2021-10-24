@@ -3,16 +3,14 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1">
+  <link rel="preload" href="assets/fonts/ReadexPro.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="{{ config.base_url }}/global.css">
   <title>MyBlog</title>
 </head>
 
 <body>
-  <section class="section">
-    <div class="container">
-      {% block content %} {% endblock %}
-    </div>
-  </section>
+  {% block content %} {% endblock %}
 </body>
 
 </html>

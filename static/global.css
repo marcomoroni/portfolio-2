@@ -1,3 +1,19 @@
+:root {
+    --color-bg: #fdfaf7;
+    --color-primary: #4c4c4c;
+    --color-header: #333333;
+    --color-accent: #ff6a50;
+    --color-selection: #ff6c5233;
+}
+
+@font-face {
+	font-family: 'ReadexPro';
+	src: url(assets/fonts/ReadexPro.ttf) format("truetype-variations");
+}
+
+
+
+
 /*** Reset ***/
 
 /* The new CSS Reset - version 1.2.0 (last updated 23.7.2021). */
@@ -6,6 +22,12 @@
 *:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
     all: unset;
     display: revert;
+    color: var(--color-primary);
+    font-family: 'ReadexPro', sans-serif;
+    font-variation-settings: 'wght' 300;
+    font-feature-settings: 'ss03' 1;
+    font-size: 14px;
+    line-height: 1.8;
 }
 
 /* Preferred box-sizing value. */
@@ -38,6 +60,63 @@ textarea {
 
 
 
+::selection {
+    background-color: var(--color-selection);
+}
+
+body {
+    background-color: var(--color-bg);
+}
+
+a {
+    cursor: pointer;
+    border-bottom: 1.8px solid var(--color-primary);
+    transition: all 0.3s ease-out;
+}
+
+a:hover {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+    transition-duration: 0s;
+}
+
 h1 {
-    color: red;
+    font-size: 43px;
+    font-feature-settings: 'ss01' 1, 'ss03' 1;
+}
+
+.no-user-select {
+    user-select: none;
+}
+
+/* Use `padding` to give a minimum height. */
+.landing-header {
+    --v-padding: 300px;
+    height: calc(100vh - 60px);
+    padding-top: var(--v-padding);
+    padding-bottom: var(--v-padding);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ciao {
+    margin-bottom: 80px;
+    user-select: none;
+}
+
+.contacts {
+    --v-margin: 17px;
+    display: flex;
+    justify-content: center;
+    margin-top: var(--v-margin);
+    margin-bottom: var(--v-margin);
+}
+
+.contacts-divider {
+    --h-margin: 8px;
+    margin-left: var(--h-margin);
+    margin-right: var(--h-margin);
+    user-select: none;
 }
