@@ -57,6 +57,10 @@ textarea {
     white-space: revert;
 }
 
+span {
+    all: unset;
+}
+
 
 
 
@@ -108,6 +112,7 @@ h1 {
 .ciao {
     margin-bottom: 80px;
     user-select: none;
+    white-space: pre-wrap;
 }
 
 .contacts {
