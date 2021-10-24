@@ -21,7 +21,7 @@
   {% for page in section.pages %}
     <a class="p-e-l-e-link" href="{{ page.permalink | safe }}">
       {% if page.extra.opt_preview_img %}
-      <div class="p-e-l-e-image" style="background-image: url({{ page.extra.opt_preview_img }});"></div>
+      <div class="p-e-l-e-image" style="background-image: url({{ config.base_url }}{{ page.extra.opt_preview_img }});"></div>
       <div class="p-e-l-e-image-overlay"></div>
       {% endif %}
       <div class="p-e-l-e-header-container">
