@@ -34,6 +34,7 @@
     font-feature-settings: 'ss03' 1;
     font-size: 14.5px;
     line-height: 1.8;
+    letter-spacing: 0.007em;
 }
 
 /* Preferred box-sizing value. */
@@ -112,7 +113,8 @@ a:hover {
 }
 
 .ciao {
-    font-size: 43px;
+    font-size: 44px;
+    letter-spacing: 0em;
     font-feature-settings: 'ss01' 1, 'ss03' 1;
     margin-bottom: 80px;
     user-select: none;
@@ -229,7 +231,7 @@ a:hover {
 }
 
 .tag {
-    --letter-spacing: 1.8px;
+    --letter-spacing: 0.25em;
     --v-padding: 4px;
     --h-padding: 11px;
     background-color: var(--color-primary);
@@ -243,6 +245,7 @@ a:hover {
 
 .p-e-header-title {
     font-family: 'Overpass Mono', monospace;
-    font-size: 17px;
+    font-size: 17.6px;
     letter-spacing: unset;
+    line-height: 1.7em;
 }
