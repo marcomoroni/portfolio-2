@@ -231,7 +231,7 @@ a:hover {
 }
 
 .tag {
-    --letter-spacing: 0.25em;
+    --letter-spacing: 0.22em;
     --v-padding: 4px;
     --h-padding: 11px;
     background-color: var(--color-primary);
