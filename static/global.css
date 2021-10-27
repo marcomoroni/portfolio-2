@@ -309,3 +309,28 @@ a:hover {
 .p-e-content > *:where(p + img):not(:first-child) {
     margin-top: var(--divider);
 }
+
+
+
+
+
+/*** Nav bar ***/
+
+.nav {
+    margin-top: 150px;
+    margin-bottom: 230px;
+    display: flex;
+    gap: 34px;
+    justify-content: center;
+}
+
+.nav-button {
+    padding: 11px 17px;
+    border: unset;
+    color: var(--color-accent);
+}
+
+.nav-button:hover {
+    background-color: var(--color-accent);
+    color: var(--color-bg);
+}

@@ -20,4 +20,10 @@
     }
   </script>
 </div>
+<div class="nav">
+  <div><a class="nav-button" href="/">Home</a></div>
+  {% if page.earlier %}
+  <div><a class="nav-button" href="{{ page.earlier.permalink }}">Next</a></div>
+  {% endif %}
+</div>
 {% endblock content %}

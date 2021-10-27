@@ -19,7 +19,7 @@
 </div>
 <div class="p-e-list">
   {% for page in section.pages %}
-  <a class="p-e-l-e-link" href="{{ page.permalink | safe }}">
+  <a class="p-e-l-e-link" href="{{ page.permalink }}">
     {% if page.extra.opt_preview_img %}
     {% set image_parent = page.permalink | replace(from="_index.md", to="") %}
     <div class="p-e-l-e-image" style="background-image: url({{ image_parent }}{{ page.extra.opt_preview_img }});"></div>
@@ -33,5 +33,8 @@
   {% for page in section.pages %}
   <div class="p-e-adjustment"></div>
   {% endfor %}
+</div>
+<div class="nav">
+  <div><a class="nav-button" href="{{ section.pages[0].permalink }}">Start from the first one</a></div>
 </div>
 {% endblock content %}
