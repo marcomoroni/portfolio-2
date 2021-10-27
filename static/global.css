@@ -32,7 +32,7 @@
     font-family: 'Readex Pro', sans-serif;
     font-variation-settings: 'wght' 300;
     font-feature-settings: 'ss03' 1;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.86;
     letter-spacing: 0.013em;
 }
@@ -117,7 +117,7 @@ a:hover {
 }
 
 .ciao {
-    font-size: 45px;
+    font-size: 43px;
     letter-spacing: 0em;
     font-feature-settings: 'ss01' 1, 'ss03' 1;
     margin-bottom: 80px;
@@ -249,7 +249,7 @@ a:hover {
 
 .p-e-header-title {
     font-family: 'Overpass Mono', monospace;
-    font-size: 18.5px;
+    font-size: 18px;
     letter-spacing: unset;
     line-height: 1.7em;
 }
