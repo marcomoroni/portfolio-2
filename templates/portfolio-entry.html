@@ -1,7 +1,23 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>{{ page.title }}</h1>
-<p>{{ page.date }}</p>
-{{ page.content | safe }}
+<div class="p-e-layout">
+  <div class="p-e-layout-spacer-above-title"></div>
+  {{ macros::portfolio_entry_header(page=page, semantic_title_element="h1") }}
+  <div class="p-e-layout-spacer-below-title"></div>
+  <div class="p-e-content" date="{{ page.date | date(format="%B %Y") }}">
+  {{ page.content | safe }}
+  </div>
+  <script>
+    // Add the date to the first `p`.
+    // This script is inside the html because it needs to be executed before the document
+    // is rendered for the first time.
+    const pEContentEl = document.getElementsByClassName('p-e-content')[0];
+    const firstPEl = pEContentEl.querySelector('p');
+    if (firstPEl != null) {
+      firstPEl.innerHTML = '<span class="date-divider">----</span>' + firstPEl.innerHTML;
+      firstPEl.prepend(pEContentEl.getAttribute('date'));
+    }
+  </script>
+</div>
 {% endblock content %}

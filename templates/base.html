@@ -7,9 +7,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1">
   <link rel="icon" href="https://github.com/marcomoroni.png?size=16">
-  <link rel="preload" href="assets/fonts/ReadexPro.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="assets/fonts/OverpassMono-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="{{ config.base_url }}/assets/fonts/ReadexPro.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="{{ config.base_url }}/assets/fonts/OverpassMono-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="{{ config.base_url }}/global.css">
+  <script src="{{ config.base_url }}/script.js"></script>
   <title>Marco Moroni</title>
 </head>
 
@@ -17,7 +18,6 @@
   <div class="container">
     {% block content %} {% endblock %}
   </div>
-  <script src="{{ config.base_url }}/script.js"></script>
 </body>
 
 </html>

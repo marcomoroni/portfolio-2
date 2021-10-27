@@ -32,9 +32,9 @@
     font-family: 'Readex Pro', sans-serif;
     font-variation-settings: 'wght' 300;
     font-feature-settings: 'ss03' 1;
-    font-size: 14.5px;
-    line-height: 1.8;
-    letter-spacing: 0.007em;
+    font-size: 15px;
+    line-height: 1.86;
+    letter-spacing: 0.013em;
 }
 
 /* Preferred box-sizing value. */
@@ -80,6 +80,10 @@ body {
     background-color: var(--color-bg);
 }
 
+em {
+    font-style: italic;
+}
+
 a {
     cursor: pointer;
     border-bottom: 1.8px solid var(--color-primary);
@@ -113,7 +117,7 @@ a:hover {
 }
 
 .ciao {
-    font-size: 44px;
+    font-size: 45px;
     letter-spacing: 0em;
     font-feature-settings: 'ss01' 1, 'ss03' 1;
     margin-bottom: 80px;
@@ -151,7 +155,7 @@ a:hover {
 
 .p-e-list {
     --gap: 56px;
-    --element-width: 600px;
+    --element-width: 640px;
     --color-item-background: #f2ece6;
     display: flex;
     flex-direction: row;
@@ -175,7 +179,7 @@ a:hover {
 .p-e-l-e-header-container {
     position: absolute;
     left: 0;
-    top: 96px;
+    top: 85px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -219,7 +223,7 @@ a:hover {
 /*** Portfolio entry header. ***/
 
 .p-e-header {
-    width: 400px;
+    width: 430px;
 }
 
 .p-e-header-tags-list {
@@ -245,7 +249,63 @@ a:hover {
 
 .p-e-header-title {
     font-family: 'Overpass Mono', monospace;
-    font-size: 17.6px;
+    font-size: 18.5px;
     letter-spacing: unset;
     line-height: 1.7em;
+}
+
+
+
+
+/*** Portfolio entry page ***/
+
+.p-e-layout {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p-e-layout-spacer-above-title {
+    height: 240px;
+}
+
+.p-e-layout-spacer-below-title {
+    height: 180px;
+}
+
+.p-e-content {
+    --content-width: 770px;
+    --content-margin: 20px;
+    --divider: 54px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.date-divider {
+    --margin: 6px;
+    user-select: none;
+    margin-left: var(--margin);
+    margin-right: var(--margin);
+}
+
+.p-e-content > p {
+    margin-left: max(var(--content-margin), calc((100% - var(--content-width)) / 2));
+    margin-right: max(var(--content-margin), calc((100% - var(--content-width)) / 2));
+}
+
+.p-e-content > img {
+    max-width: min(calc(100% - var(--content-margin) * 2), var(--content-width));
+    align-self: center;
+}
+
+.p-e-content > *:where(img):not(:last-child) {
+    margin-bottom: var(--divider);
+}
+
+.p-e-content > *:where(p + img):not(:first-child) {
+    margin-top: var(--divider);
 }
