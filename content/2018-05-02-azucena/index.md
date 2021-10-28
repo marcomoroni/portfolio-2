@@ -4,7 +4,7 @@ slug = "azucena"
 template = "portfolio-entry.html"
 [extra]
 tags = ["graphics", "physics", "C++"]
-opt_preview_img = "capture-02.png"
+opt_preview_img = "capture_02.png"
 +++
 
 This is my article.
