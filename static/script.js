@@ -8,7 +8,7 @@ const typewriterTimeline = [
     {
         _kind: 'type',
         content: ', I\'m Marco :)',
-        perLetterDuration: 170,
+        perLetterDuration: 190,
     },
     {
         _kind: 'wait',
