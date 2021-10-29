@@ -4,8 +4,7 @@ slug = "mv"
 template = "portfolio-entry.html"
 [extra]
 tags = ["graphics", "C++"]
-opt_preview_img = "animated.gif"
-opt_preview_img = "screen02.png"
+opt_preview_img = ["screen07.png", "inverted", 5, 1]
 +++
 
 This is my article.

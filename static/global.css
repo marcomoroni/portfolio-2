@@ -156,7 +156,7 @@ a:hover {
 .p-e-list {
     --gap: 56px;
     --element-width: 640px;
-    --color-item-background: #f2ece6;
+    --color-item-background: #ede8e3;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -185,8 +185,12 @@ a:hover {
     justify-content: center;
 }
 
-.p-e-l-e-header-container .p-e-header-title {
-    text-shadow: 0 0 6px var(--color-item-background);
+.defs-only {
+    position: absolute;
+    height: 0;
+    width: 0;
+    overflow: none;
+    left: -100%;
 }
 
 .p-e-l-e-image {
@@ -206,7 +210,12 @@ a:hover {
     width: 100%;
     height: 100%;
     background-color: var(--color-item-background);
-    opacity: 0.93;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.p-e-l-e-link:hover .p-e-l-e-image-overlay {
+    opacity: 1;
 }
 
 .p-e-adjustment {

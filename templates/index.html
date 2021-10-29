@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 
 {% block content %}
+{% set color_dark = [237 / 255, 232 / 255, 227 / 255] %}
+{% set color_light = [253 / 255, 250 / 255, 247 / 255] %}
 <div class="landing-header">
   <h1 class="ciao">Ciao<span id="typewriter"></span></h1>
   <p>Programmer &amp; UI/UX designer.</p>
@@ -22,7 +24,16 @@
   <a class="p-e-l-e-link" href="{{ page.permalink }}">
     {% if page.extra.opt_preview_img %}
     {% set image_parent = page.permalink | replace(from="_index.md", to="") %}
-    <div class="p-e-l-e-image" style="background-image: url({{ image_parent }}{{ page.extra.opt_preview_img }});"></div>
+    {% if page.extra.opt_preview_img[1] == "default" %}
+      {% set tone_1 = color_dark %}
+      {% set tone_2 = color_light %}
+    {% elif page.extra.opt_preview_img[1] == "inverted" %}
+      {% set tone_1 = color_light %}
+      {% set tone_2 = color_dark %}
+    {% endif %}
+    {% set filter_id = "duotone_" ~ page.slug %}
+    {{ macros::duotone_table(id=filter_id, stops_dark=page.extra.opt_preview_img[2], stops_light=page.extra.opt_preview_img[3], color_dark=tone_1, color_light=tone_2) }}
+    <div class="p-e-l-e-image" style="background-image: url({{ image_parent }}{{ page.extra.opt_preview_img[0] }}); filter: url(#{{ filter_id }})"></div>
     <div class="p-e-l-e-image-overlay"></div>
     {% endif %}
     <div class="p-e-l-e-header-container">
