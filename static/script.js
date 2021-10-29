@@ -78,12 +78,24 @@ window.addEventListener('load', () => {
         cursor.classList.remove('visible');
         cursor.classList.add('hidden');
     });
-    document.querySelectorAll('a, .cursor-interactable').forEach((item) => {
+    document.querySelectorAll('a, .cursor-interactable, .can-toggle-full-width').forEach((item) => {
         item.addEventListener('mouseover', (e) => {
             cursor.classList.add('hover-link');
         });
         item.addEventListener('mouseleave', () => {
             cursor.classList.remove('hover-link');
         });
+    });
+
+    // Full-screen images.
+    document.querySelectorAll('.can-toggle-full-width').forEach((el) => {
+        el.onclick = (e) => {
+            if (el.classList.contains('full-width')) {
+                el.classList.remove('full-width');
+            }
+            else {
+                el.classList.add('full-width');
+            }
+        };
     });
 });

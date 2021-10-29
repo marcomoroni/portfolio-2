@@ -16,12 +16,12 @@ This was the Honours Project for my degree in Games Development at Edinburgh Nap
 
 The following are screenshots of the generated artefacts (made in Unity — they are 3D and interactive). I was extremely lucky to have Minna helping me throughout the project — she made all the assets I needed!
 
-{{ image(src="perspective-01.png", stretch=true, full_width=true) }}
-{{ image(src="perspective-03.png", stretch=true, full_width=true) }}
+{{ image(src="perspective-01.png", stretch=true, full_width=true, can_toggle_full_width=true) }}
+{{ image(src="perspective-03.png", stretch=true, full_width=true, can_toggle_full_width=true) }}
 
 And a 2D one (with an orthographic projection):
 
-{{ image(src="ortho-01.png", stretch=true, full_width=true) }}
+{{ image(src="ortho-01.png", stretch=true, full_width=true, can_toggle_full_width=true) }}
 
 Needless to say, the final result is way more limited than initially imagined, but I'm extremely happy with what I've learnt. Procedural art is really fascinating!
 
@@ -56,5 +56,5 @@ For every category I identified its strengths and weaknesses, and then picked th
 
 ## Academic poster
 
-{{ image(src="poster_front.png") }}
-{{ image(src="poster_back.png") }}
+{{ image(src="poster_front.png", can_toggle_full_width=true) }}
+{{ image(src="poster_back.png", can_toggle_full_width=true) }}
