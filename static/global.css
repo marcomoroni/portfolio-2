@@ -372,9 +372,18 @@ a:hover {
     margin-right: var(--margin);
 }
 
-.p-e-content > p {
+.p-e-content > p,
+.p-e-content > h2,
+.p-e-article-button-container {
     margin-left: max(var(--content-margin), calc((100% - var(--content-width)) / 2));
     margin-right: max(var(--content-margin), calc((100% - var(--content-width)) / 2));
+}
+
+.p-e-content > h2 {
+    font-variation-settings: 'wght' 600;
+    font-size: 15px;
+    margin-top: 55px;
+    margin-bottom: 21px;
 }
 
 .p-e-content > img {
@@ -392,11 +401,6 @@ a:hover {
 
 .p-e-content > img.stretch.full-width {
     width: max(min(calc(100% - var(--content-margin) * 2), var(--content-width)), calc(100% - var(--divider) * 2));
-}
-
-.p-e-article-button-container {
-    margin-left: max(var(--content-margin), calc((100% - var(--content-width)) / 2));
-    margin-right: max(var(--content-margin), calc((100% - var(--content-width)) / 2));
 }
 
 .p-e-article-button {
