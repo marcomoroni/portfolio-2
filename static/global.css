@@ -69,6 +69,11 @@ span {
     all: unset;
 }
 
+/* Else there's some margin around. */
+img {
+    display: block;
+}
+
 
 
 
@@ -374,6 +379,18 @@ a:hover {
 .p-e-content > img {
     max-width: min(calc(100% - var(--content-margin) * 2), var(--content-width));
     align-self: center;
+}
+
+.p-e-content > img.full-width {
+    max-width: calc(100% - var(--content-margin) * 2);
+}
+
+.p-e-content > img.stretch {
+    width: min(calc(100% - var(--content-margin) * 2), var(--content-width));
+}
+
+.p-e-content > img.stretch.full-width {
+    width: max(min(calc(100% - var(--content-margin) * 2), var(--content-width)), calc(100% - var(--divider) * 2));
 }
 
 .p-e-content > *:where(img):not(:last-child) {
