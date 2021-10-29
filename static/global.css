@@ -104,6 +104,10 @@ a:hover {
     user-select: none;
 }
 
+.user-select-all {
+    user-select: all;
+}
+
 /* Use `padding` to give a minimum height. */
 .landing-header {
     --v-padding: 300px;
