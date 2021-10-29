@@ -1,0 +1,9 @@
+<div class="p-e-article-button-container">
+    {% set count = buttons | length / 2 %}
+    {% set count = count | int %}
+    {% for _ in range(end=count) %}
+    {% set title_index = loop.index0 * 2 %}
+    {% set href_index = loop.index0 * 2 + 1 %}
+    <a class="p-e-article-button" href="{{ buttons[href_index] }}">{{ buttons[title_index] }}</a>
+    {% endfor %}
+</div>

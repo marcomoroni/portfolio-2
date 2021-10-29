@@ -13,7 +13,7 @@ opt_preview_img = ["h1.png", "default", 2, 4]
 
 I made *I'd like to go home* during the [Global Game Jam](https://globalgamejam.org/) 2019, where you have a time limit of 48 hours.
 
-{{ article_button(text="Play it", href="https://marcomoroni.itch.io/id-like-to-go-home") }}
+{{ article_buttons(buttons=["Play it", "https://marcomoroni.itch.io/id-like-to-go-home", "Source code", "https://github.com/marcomoroni/ggj-2019"]) }}
 
 This year I decided to go all solo: I drew the assets and I used Unity to build it. It's made with 2D sprites in a 3D side-scrolling scene.
 
