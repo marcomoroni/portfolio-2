@@ -19,13 +19,13 @@ The following are screenshots of the generated artefacts (made in Unity — they
 {{ image(src="perspective-01.png", stretch=true, full_width=true) }}
 {{ image(src="perspective-03.png", stretch=true, full_width=true) }}
 
-And a 2D one:
+And a 2D one (orthographic projection):
 
 {{ image(src="ortho-01.png", stretch=true, full_width=true) }}
 
 Needless to say, the final result is way more limited than initially imagined, but I'm extremely happy with what I've learnt. Procedural art is really fascinating!
 
-...
+{{ article_button(text="Try the generator", href="https://marcomoroni.itch.io/architect") }}
 
 If you'd like to learn more about how I did it, keep reading!
 
