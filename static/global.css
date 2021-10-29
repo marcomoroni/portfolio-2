@@ -338,7 +338,8 @@ a:hover {
 }
 
 .nav-button {
-    padding: 11px 17px;
+    --h-padding: 18px;
+    padding: 11px var(--h-padding) 13px var(--h-padding);
     border: unset;
     color: var(--color-accent);
 }
