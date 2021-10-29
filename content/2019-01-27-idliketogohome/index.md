@@ -15,7 +15,7 @@ I made *I'd like to go home* during the [Global Game Jam](https://globalgamejam.
 
 {{ article_button(text="Play it", href="https://marcomoroni.itch.io/id-like-to-go-home") }}
 
-This year I decided to go all solo: I drew the assets and I used [Unity](https://unity3d.com/) to build it. It's made with 2D sprites in a 3D side-scrolling scene.
+This year I decided to go all solo: I drew the assets and I used Unity to build it. It's made with 2D sprites in a 3D side-scrolling scene.
 
 It's a short story about a rabbit that lost his way home. My attention was all on the immersion of the player and the art-style was inspired by [Jon Klassen](http://jonklassen.tumblr.com/) — for the characters and the story — and [Gal Shir](https://galshir.com/) — for the colours and the vegetation.
 

@@ -375,7 +375,7 @@ a:hover {
 }
 
 .p-e-layout-spacer-below-title {
-    height: 180px;
+    height: 190px;
 }
 
 .p-e-content {
@@ -466,11 +466,15 @@ a:hover {
 /*** Nav bar ***/
 
 .nav {
-    margin-top: 150px;
-    margin-bottom: 230px;
+    margin-top: 140px;
+    margin-bottom: 210px;
     display: flex;
     gap: 34px;
     justify-content: center;
+}
+
+.nav.home {
+    margin-top: 120px;
 }
 
 .nav-button {
@@ -481,7 +485,8 @@ a:hover {
     user-select: none;
 }
 
-.nav-button:hover {
+.nav-button:hover,
+.nav-button.filled {
     background-color: var(--color-accent);
     color: var(--color-bg);
 }
