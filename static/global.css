@@ -155,7 +155,7 @@ a:hover {
 
 .p-e-list {
     --gap: 56px;
-    --element-width: 640px;
+    --element-width: 634px;
     --color-item-background: #ede8e3;
     display: flex;
     flex-direction: row;
