@@ -4,6 +4,7 @@
     --color-header: #333333;
     --color-accent: #f7745d;
     --color-selection: #f7745d33;
+    --custom-ease-out: cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 @font-face {
@@ -87,7 +88,7 @@ em {
 a {
     cursor: pointer;
     border-bottom: 1.8px solid var(--color-primary);
-    transition: all 0.3s ease-out;
+    transition: all 0.4s var(--custom-ease-out);
 }
 
 a:hover {
@@ -215,7 +216,7 @@ a:hover {
     height: 100%;
     background-color: var(--color-item-background);
     opacity: 0;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s var(--custom-ease-out);
 }
 
 .p-e-l-e-link:hover .p-e-l-e-image-overlay {
