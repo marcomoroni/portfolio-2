@@ -4,7 +4,7 @@ slug = "jw"
 template = "portfolio-entry.html"
 [extra]
 tags = ["published", "XR", "UI / UX", "Unity", "C#"]
-opt_preview_img = ["jw.jpg", "default", 3, 3]
+opt_preview_img = ["jw.jpg", "default", 2, 4]
 +++
 
 {{ image(src="jw.jpg") }}
