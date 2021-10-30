@@ -78,7 +78,7 @@ span {
 }
 
 /* Else there's some margin around. */
-img {
+img, iframe {
     display: block;
 }
 

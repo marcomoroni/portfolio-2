@@ -11,15 +11,13 @@ opt_preview_img = ["h1.png", "default", 2, 4]
 {{ image(src="h2.png", stretch=true, full_width=true, can_toggle_full_width=true) }}
 {{ image(src="h3.png", stretch=true, full_width=true, can_toggle_full_width=true) }}
 
-I made *I'd like to go home* during the [Global Game Jam](https://globalgamejam.org/) 2019, where you have a time limit of 48 hours.
+I made *I'd like to go home* during the [Global Game Jam](https://globalgamejam.org/) 2019, where you have create a game in 48 hours.
 
-{{ article_buttons(buttons=["Play it", "https://marcomoroni.itch.io/id-like-to-go-home", "Source code", "https://github.com/marcomoroni/ggj-2019"]) }}
+{{ article_buttons(buttons=["Play it", "https://marcomoroni.itch.io/id-like-to-go-home", "Playthrough (3:01)", "https://youtu.be/kFk0DDlWAJY", "Source code", "https://github.com/marcomoroni/ggj-2019"]) }}
 
 This year I decided to go all solo: I drew the assets and I used Unity to build it. It's made with 2D sprites in a 3D side-scrolling scene.
 
 It's a short story about a rabbit that lost his way home. My attention was all on the immersion of the player and the art-style was inspired by [Jon Klassen](http://jonklassen.tumblr.com/) — for the characters and the story — and [Gal Shir](https://galshir.com/) — for the colours and the vegetation.
-
-... video
 
 Some technical insights:
 * The background seems to be of one solid dark purple: the 3D plane on the ground has a monochrome unlit shader so that you cannot see where the floor ends.
