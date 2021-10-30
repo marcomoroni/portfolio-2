@@ -1,7 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
+<a class="home-button" href="{{ config.base_url }}" title="Home"></a>
 <div class="p-e-layout">
+  <div class="nav-dots-container">
+    {% set section = get_section(path="_index.md") %}
+    {% for other_page in section.pages %}
+    <div class="nav-dot {% if other_page.slug == page.slug %}this{% endif %}"></div>
+    {% endfor %}
+  </div>
   <div class="p-e-layout-spacer-above-title"></div>
   {{ macros::portfolio_entry_header(page=page, semantic_title_element="h1") }}
   <div class="p-e-layout-spacer-below-title"></div>
