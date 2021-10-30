@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<a class="home-button" href="{{ config.base_url }}" title="Home"></a>
+<div class="e404-layout">
+    <h1 class="e404-title">404</h1>
+    <img class="e404-seed" src="{{ config.base_url }}/assets/korok_seed.png"/>
+    <p class="e404-text"><em>Yahaha! You found nothing!</em></p>
+</div>
+{% endblock content %}

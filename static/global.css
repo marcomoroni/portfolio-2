@@ -564,3 +564,36 @@ a:hover {
     background-color: var(--color-accent);
     color: var(--color-bg);
 }
+
+
+
+
+
+/*** 404 ***/
+
+.e404-layout {
+    width: 100vw;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.e404-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 86px;
+}
+
+.e404-seed {
+    --size: 34px;
+    display: block;
+    width: var(--size);
+    height: var(--size);
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+.e404-text {
+    text-align: center;
+}
