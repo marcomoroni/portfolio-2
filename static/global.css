@@ -484,7 +484,7 @@ a:hover {
 
 .nav-button {
     display: block;
-    padding: 8px 20px;;
+    padding: 8px 18px;;
     border: unset;
     color: var(--color-accent);
     user-select: none;
