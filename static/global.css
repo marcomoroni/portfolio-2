@@ -73,7 +73,7 @@ textarea {
     white-space: revert;
 }
 
-span {
+span, em, strong {
     all: unset;
 }
 
@@ -382,7 +382,9 @@ a:hover {
     --content-width: 760px;
     --content-margin: 20px;
     --divider: 54px;
+    --h2-margin-top: 55px;
     --h2-margin-bottom: 21px;
+    --article-buttons-container-v-margin: 15px;
     position: relative;
     width: 100%;
     display: flex;
@@ -407,7 +409,7 @@ a:hover {
 .p-e-content > h2 {
     font-variation-settings: 'wght' 600;
     font-size: 15px;
-    margin-top: 55px;
+    margin-top: var(--h2-margin-top);
     margin-bottom: var(--h2-margin-bottom);
 }
 
@@ -423,10 +425,19 @@ a:hover {
     max-width: min(calc(100% - var(--content-margin) * 2), var(--content-width));
     align-self: center;
     transition: all 1s cubic-bezier(0.1, 0.9, 0.18, 0.98);
+    /* max-height: var(--content-width); */
+}
+
+.p-e-content > img.tall {
+    width: 400px;
 }
 
 .p-e-content > img.full-width {
     max-width: max(min(calc(100% - var(--content-margin) * 2), var(--content-width)), calc(100% - var(--divider) * 2));
+}
+
+.p-e-content > img.tall.full-width {
+    width: min(calc(100% - var(--content-margin) * 2), var(--content-width));
 }
 
 .p-e-content > img.stretch {
@@ -440,20 +451,23 @@ a:hover {
 .p-e-article-button-container {
     display: flex;
     gap: 11px;
+    margin-top: var(--article-buttons-container-v-margin);
+    margin-bottom: var(--article-buttons-container-v-margin);
 }
 
 .p-e-article-button {
-    --v-margin: 15px;
     display: inline-block;
     border: var(--border-width) solid var(--color-primary);
     padding: 3px 12px;
-    margin-top: var(--v-margin);
-    margin-bottom: var(--v-margin);
     user-select: none;
 }
 
 .p-e-content > *:where(img):not(:last-child) {
     margin-bottom: var(--divider);
+}
+
+.p-e-content > *:where(.p-e-article-button-container):last-child {
+    margin-bottom: unset;
 }
 
 .p-e-content > *:where(p + img):not(:first-child) {
@@ -462,6 +476,14 @@ a:hover {
 
 .p-e-content > *:where(h2 + img):not(:first-child) {
     margin-top: calc(var(--divider) - var(--h2-margin-bottom));
+}
+
+.p-e-content > *:where(.p-e-article-button-container + img):not(:first-child) {
+    margin-top: calc(var(--divider) - var(--article-buttons-container-v-margin));
+}
+
+.p-e-content > *:where(img + h2):not(:first-child) {
+    margin-top: calc(var(--h2-margin-top) - var(--divider));
 }
 
 
