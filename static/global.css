@@ -428,6 +428,14 @@ a:hover {
     /* max-height: var(--content-width); */
 }
 
+.p-e-content > img.can-toggle-full-width:hover {
+    transform: scale(1.02);
+}
+
+.p-e-content > img.full-width.can-toggle-full-width:hover {
+    transform: scale(0.985);
+}
+
 .p-e-content > img.tall {
     width: 400px;
 }
