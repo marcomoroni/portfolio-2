@@ -7,7 +7,7 @@ tags = ["physics", "C++"]
 opt_preview_img = ["point.gif", "inverted", 3, 3]
 +++
 
-This is a set of physics-based animations I made at university using C++.
+This is a set of physics-based animations I made at university in C++.
 
 {{ article_buttons(buttons=["Source code", "https://github.com/marcomoroni/set09119"]) }}
 

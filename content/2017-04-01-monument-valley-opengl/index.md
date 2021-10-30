@@ -1,5 +1,5 @@
 +++
-title = "Impossible shapes made using OpenGL that replicate the art style of the game Monument Valley"
+title = "Impossible shapes made using OpenGL inspired by Monument Valley"
 slug = "mv"
 template = "portfolio-entry.html"
 [extra]
