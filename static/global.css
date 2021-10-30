@@ -431,7 +431,8 @@ a:hover {
 }
 
 .date-divider {
-    --margin: 6px;
+    --margin: 10px;
+    font-feature-settings: 'case' 1;
     user-select: none;
     margin-left: var(--margin);
     margin-right: var(--margin);

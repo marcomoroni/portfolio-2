@@ -22,7 +22,7 @@
     const pEContentEl = document.getElementsByClassName('p-e-content')[0];
     const firstPEl = pEContentEl.querySelector('p');
     if (firstPEl != null) {
-      firstPEl.innerHTML = '<span class="date-divider">----</span>' + firstPEl.innerHTML;
+      firstPEl.innerHTML = '<span class="date-divider">&#92;&#92;&#92;</span>' + firstPEl.innerHTML;
       firstPEl.prepend(pEContentEl.getAttribute('date'));
     }
   </script>
