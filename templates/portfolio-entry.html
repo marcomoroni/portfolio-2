@@ -28,9 +28,9 @@
   </script>
 </div>
 <div class="nav">
-  <div><a class="nav-button" href="{{ config.base_url }}">Home</a></div>
+  <div><a class="nav-button" href="{{ config.base_url }}"><div class="nav-button-text">Home</div></a></div>
   {% if page.earlier %}
-  <div><a class="nav-button" href="{{ page.earlier.permalink }}">Next</a></div>
+  <div><a class="nav-button" href="{{ page.earlier.permalink }}"><div class="nav-button-text">Next</div><div class="nav-button-icon">{{ macros::right_arrow() }}</div></a></div>
   {% endif %}
 </div>
 {% endblock content %}

@@ -79,7 +79,7 @@ span, em, strong {
 }
 
 /* Else there's some margin around. */
-img, iframe {
+img, iframe, svg {
     display: block;
 }
 
@@ -197,6 +197,18 @@ a:hover {
 .user-select-all {
     user-select: all;
 }
+
+.right-arrow {
+    --size: 24px;
+    width: var(--size);
+    height: var(--size);
+}
+
+
+
+
+
+/*** Home page header ***/
 
 /* Use `padding` to give a minimum height. */
 .landing-header {
@@ -551,17 +563,53 @@ a:hover {
 }
 
 .nav-button {
+    --h-padding: 18px;
     display: block;
-    padding: 8px 18px;;
+    padding-left: var(--h-padding);
+    padding-right: var(--h-padding);
+    height: 42px;
     border: unset;
     color: var(--color-accent);
     user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-button-text,
+.nav-button-icon,
+.nav-button-icon *,
+.nav-button:hover .nav-button-text,
+.nav-button:hover .nav-button-icon,
+.nav-button:hover .nav-button-icon * {
+    transition: inherit;
+}
+
+.nav-button-text {
+    color: var(--color-accent);
+}
+
+.nav-button-icon * {
+    fill: var(--color-accent);
+}
+
+.nav-button:hover .nav-button-text {
+    color: var(--color-bg);
+}
+
+.nav-button:hover .nav-button-icon * {
+    fill: var(--color-bg);
 }
 
 .nav-button:hover,
 .nav-button.filled {
     background-color: var(--color-accent);
+}
+
+.nav-button.filled .nav-button-text,
+.nav-button.filled .nav-button-icon * {
     color: var(--color-bg);
+    fill: var(--color-bg);
 }
 
 
