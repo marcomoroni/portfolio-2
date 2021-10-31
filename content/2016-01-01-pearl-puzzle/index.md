@@ -15,7 +15,7 @@ Here's how you play it: by pressing the directional arrows you move all the mova
 
 After the 48 hours we ended up with the two working levels that you can see below.
 
-{{ article_buttons(buttons=["Download & source code", "https://github.com/MarcoMoroni/ShellPuzzle"]) }}
+{{ article_buttons(buttons=["Download & source code", "https://github.com/MarcoMoroni/shell-puzzle"]) }}
 
 {{ image(src="screen01.png", stretch=true, can_toggle_full_width=true) }}
 {{ image(src="screen02.png", stretch=true, can_toggle_full_width=true) }}
