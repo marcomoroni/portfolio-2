@@ -66,14 +66,6 @@ window.addEventListener('load', () => {
 
     // Cursor.
     const cursor = document.getElementsByClassName('cursor')[0];
-    const updateCursorPos = (x, y) => {
-        cursor.style.transform = `translate(${x}px, ${y}px)`;
-    };
-    window.addEventListener('mousemove', (e) => {
-        cursor.classList.remove('hidden');
-        cursor.classList.add('visible');
-        updateCursorPos(e.clientX, e.clientY);
-    });
     document.querySelector('body').addEventListener('mouseleave', (e) => {
         cursor.classList.remove('visible');
         cursor.classList.add('hidden');
