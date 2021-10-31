@@ -70,7 +70,7 @@ window.addEventListener('load', () => {
         cursor.classList.remove('visible');
         cursor.classList.add('hidden');
     });
-    document.querySelectorAll('a, .cursor-interactable, .can-toggle-full-width').forEach((item) => {
+    document.querySelectorAll('a, .cursor-interactable').forEach((item) => {
         item.addEventListener('mouseover', (e) => {
             cursor.classList.add('hover-link');
         });
