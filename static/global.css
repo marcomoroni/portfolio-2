@@ -161,14 +161,14 @@ em {
 
 code {
     --letter-spacing: -0.01em;
-    --h-padding: 5px;
+    --h-padding: 4px;
     --h-margin: 1px;
     font-family: 'Overpass Mono', monospace;
     letter-spacing: -0.01em;
     line-height: 1.7em;
     background-color: #4c4c4c10;
     background-color: #f2ece5;
-    padding: 5px calc(var(--h-padding) - var(--letter-spacing)) 4px var(--h-padding);
+    padding: 6px calc(var(--h-padding) - var(--letter-spacing)) 3px var(--h-padding);
     margin-left: var(--h-margin);
     margin-right: var(--h-margin);
     border-radius: 4px;
