@@ -35,7 +35,7 @@ The lighter particle has a higher mass.
 
 In *Super Mario Galaxy* the player is able to walk in planetoids of any shape and size. This is possible because bodies are affected by the gravity of only one planetoid at once and the gravity direction is the inverse of the normal of (usually) the closest surface.
 
-I've managed to apply this principle to particles in box-shaped planetoids. The gravity direction is the normalised vector from the particle to a point *U*, where *U* is the point on (or in) the planetoid closest to the particle.
+I applied this principle to particles in box-shaped planetoids. The gravity direction is the normalised vector from the particle to a point *U*, where *U* is the point on (or in) the planetoid closest to the particle.
 
 {{ image(src="smg.gif", stretch=true, can_toggle_full_width=true) }}
 
