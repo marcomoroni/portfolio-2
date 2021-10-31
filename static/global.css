@@ -421,9 +421,6 @@ a:hover {
 .p-e-content {
     --content-width: 760px;
     --content-margin: 20px;
-    --h2-margin-top: 55px;
-    --h2-margin-bottom: 21px;
-    --article-buttons-container-v-margin: 15px;
     position: relative;
     width: 100%;
     display: flex;
@@ -449,14 +446,9 @@ a:hover {
 .p-e-content > h2 {
     font-variation-settings: 'wght' 600;
     font-size: 15px;
-    margin-top: var(--h2-margin-top);
-    margin-bottom: var(--h2-margin-bottom);
 }
 
 .p-e-content > ul {
-    --v-padding: 11px;
-    padding-top: var(--v-padding);
-    padding-bottom: var(--v-padding);
     padding-left: 40px;
     list-style-type: disc;
 }
@@ -465,7 +457,6 @@ a:hover {
     max-width: min(calc(100% - var(--content-margin) * 2), var(--content-width));
     align-self: center;
     transition: all 1s cubic-bezier(0.1, 0.9, 0.18, 0.98);
-    /* max-height: var(--content-width); */
 }
 
 .p-e-content > img.can-toggle-full-width:hover {
@@ -499,8 +490,6 @@ a:hover {
 .p-e-article-button-container {
     display: flex;
     gap: 11px;
-    margin-top: var(--article-buttons-container-v-margin);
-    margin-bottom: var(--article-buttons-container-v-margin);
 }
 
 .p-e-article-button {
@@ -510,28 +499,37 @@ a:hover {
     user-select: none;
 }
 
-.p-e-content > *:where(img):not(:last-child) {
-    margin-bottom: var(--p-e-content-divider);
-}
-
-.p-e-content > *:where(.p-e-article-button-container):last-child {
-    margin-bottom: unset;
-}
-
-.p-e-content > *:where(p + img):not(:first-child) {
+.p-e-content > p + img,
+.p-e-content > img + p,
+.p-e-content > img + img,
+.p-e-content > h2 + img,
+.p-e-content > .p-e-article-button-container + img {
     margin-top: var(--p-e-content-divider);
 }
 
-.p-e-content > *:where(h2 + img):not(:first-child) {
-    margin-top: calc(var(--p-e-content-divider) - var(--h2-margin-bottom));
+.p-e-content > p + .p-e-article-button-container,
+.p-e-content > .p-e-article-button-container + p {
+    margin-top: 13px;
 }
 
-.p-e-content > *:where(.p-e-article-button-container + img):not(:first-child) {
-    margin-top: calc(var(--p-e-content-divider) - var(--article-buttons-container-v-margin));
+.p-e-content > p + h2,
+.p-e-content > ul + h2,
+.p-e-content > .p-e-article-button-container + h2,
+.p-e-content > img + h2 {
+    margin-top: 55px;
 }
 
-.p-e-content > *:where(img + h2):not(:first-child) {
-    margin-top: calc(var(--h2-margin-top) - var(--p-e-content-divider));
+.p-e-content > h2 + p {
+    margin-top: 21px;
+}
+
+.p-e-content > p + ul,
+.p-e-content > ul + p {
+    margin-top: 11px;
+}
+
+.p-e-content > ul + .p-e-article-button-container {
+    margin-top: 24px;
 }
 
 
