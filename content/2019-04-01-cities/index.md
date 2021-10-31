@@ -14,7 +14,7 @@ This was the Honours Project for my degree in Games Development at Edinburgh Nap
 {{ image(src="minna04.jpg", stretch=true) }}
 {{ image(src="minna05.jpg", stretch=true) }}
 
-The following are screenshots of the generated artefacts (made in Unity — they are 3D and interactive). I was extremely lucky to have Minna helping me throughout the project — she made all the assets I needed!
+The following are screenshots of the generated artefacts (in the app they would be 3D and interactive). I was extremely lucky to have Minna helping me throughout the project — she made all the assets I needed!
 
 {{ image(src="perspective-01.png", stretch=true, full_width=true, can_toggle_full_width=true) }}
 {{ image(src="perspective-03.png", stretch=true, full_width=true, can_toggle_full_width=true) }}
