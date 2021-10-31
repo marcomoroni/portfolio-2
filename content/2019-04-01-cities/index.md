@@ -47,7 +47,7 @@ For this project I ended up using only additive techniques. Here's a short summa
 
 ## Techniques used
 
-For every category I identified its strengths and weaknesses, and then picked the ones that better suited what I wanted to achieve.
+For each category I identified its strengths and weaknesses, and then picked the ones that better suited what I wanted to achieve.
 
 A city is made of stacked 2D layers. Each layer is essentially a list where the items are *building*, *tree*, *brigde*, *empty space*, etc., and this list is populated using a Markov chain, which is a distribution technique. The idea of a Markov chain is simple: the probability to pick a certain item depends on the preceding item.
 
