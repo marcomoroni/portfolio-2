@@ -576,6 +576,10 @@ a:hover {
     gap: 10px;
 }
 
+.nav-button.with-icon {
+    padding-right: 14px;
+}
+
 .nav-button-text,
 .nav-button-icon,
 .nav-button-icon *,
