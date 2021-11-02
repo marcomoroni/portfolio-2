@@ -165,8 +165,6 @@ code {
     --h-margin: 1px;
     font-family: 'Overpass Mono', monospace;
     letter-spacing: -0.01em;
-    line-height: 1.7em;
-    background-color: #4c4c4c10;
     background-color: #f2ece5;
     padding: 6px calc(var(--h-padding) - var(--letter-spacing)) 3px var(--h-padding);
     margin-left: var(--h-margin);
