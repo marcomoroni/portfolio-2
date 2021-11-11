@@ -25,7 +25,7 @@ And a 2D one (with an orthographic projection):
 
 Needless to say, the final result is way more limited than initially imagined, but I'm extremely happy with what I've learnt. Procedural art is really fascinating!
 
-{{ article_buttons(buttons=["Try the generator", "https://marcomoroni.itch.io/architect"]) }}
+{{ article_buttons(buttons=["Try it", "https://marcomoroni.itch.io/architect"]) }}
 
 If you'd like to learn more about how I did it, keep reading!
 
