@@ -590,6 +590,7 @@ a:hover {
 
 .nav-button-text {
     color: var(--color-accent);
+    font-variation-settings: 'wght' 350;
 }
 
 .nav-button-icon * {
