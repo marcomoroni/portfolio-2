@@ -238,7 +238,7 @@ a:hover {
 }
 
 .contacts-divider {
-    --h-margin: 8px;
+    --h-margin: 10px;
     margin-left: var(--h-margin);
     margin-right: var(--h-margin);
     user-select: none;
