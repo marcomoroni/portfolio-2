@@ -356,7 +356,7 @@ a:hover {
     font-size: 10.2px;
     text-transform: uppercase;
     letter-spacing: var(--letter-spacing);
-    font-variation-settings: 'wght' 360;
+    font-variation-settings: 'wght' 370;
     padding: var(--v-padding) calc(var(--h-padding) - var(--letter-spacing)) var(--v-padding) var(--h-padding);
 }
 
