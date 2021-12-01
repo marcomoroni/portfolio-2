@@ -7,7 +7,7 @@ tags = ["Game Jam", "Unity", "C#"]
 opt_preview_img = ["screen02.png", "inverted", 3, 3]
 +++
 
-{{ image(src="title01.png", stretch=true, can_toggle_full_width=true) }}
+{{ image(src="title01.png", stretch=true) }}
 
 The theme for the [Global Game Jam](https://globalgamejam.org/) 2017 was *waves* and because it was my first Game Jam I decided to keep it simple. I participated with a friend and we had a lot of fun!
 
