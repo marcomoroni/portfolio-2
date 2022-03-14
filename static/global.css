@@ -242,6 +242,7 @@ a:hover {
     margin-left: var(--h-margin);
     margin-right: var(--h-margin);
     user-select: none;
+    font-variation-settings: 'wght' 400; /* Larger dots. */
 }
 
 
