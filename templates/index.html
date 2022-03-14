@@ -26,15 +26,18 @@
     {% if page.extra.opt_preview_img %}
     {% set image_parent = page.permalink | replace(from="_index.md", to="") %}
     {% if page.extra.opt_preview_img[1] == "default" %}
-      {% set tone_1 = color_dark %}
-      {% set tone_2 = color_light %}
+    {% set tone_1 = color_dark %}
+    {% set tone_2 = color_light %}
     {% elif page.extra.opt_preview_img[1] == "inverted" %}
-      {% set tone_1 = color_light %}
-      {% set tone_2 = color_dark %}
+    {% set tone_1 = color_light %}
+    {% set tone_2 = color_dark %}
     {% endif %}
     {% set filter_id = "duotone_" ~ page.slug %}
-    {{ macros::duotone_table(id=filter_id, stops_dark=page.extra.opt_preview_img[2], stops_light=page.extra.opt_preview_img[3], color_dark=tone_1, color_light=tone_2) }}
-    <div class="p-e-l-e-image" style="background-image: url({{ image_parent }}{{ page.extra.opt_preview_img[0] }}); filter: url(#{{ filter_id }})"></div>
+    {{ macros::duotone_table(id=filter_id, stops_dark=page.extra.opt_preview_img[2],
+    stops_light=page.extra.opt_preview_img[3], color_dark=tone_1, color_light=tone_2) }}
+    <div class="p-e-l-e-image"
+      style="background-image: url({{ image_parent }}{{ page.extra.opt_preview_img[0] }}); filter: url(#{{ filter_id }})">
+    </div>
     <div class="p-e-l-e-image-overlay"></div>
     {% endif %}
     <div class="p-e-l-e-header-container">
@@ -47,6 +50,9 @@
   {% endfor %}
 </div>
 <div class="nav home">
-  <div><a class="nav-button filled with-icon" href="{{ section.pages[0].permalink }}"><div class="nav-button-text">Start from the first one</div><div class="nav-button-icon">{{ macros::right_arrow() }}</div></a></div>
+  <div><a class="nav-button filled with-icon" href="{{ section.pages[0].permalink }}">
+      <div class="nav-button-text">Start from the first one</div>
+      <div class="nav-button-icon">{{ macros::right_arrow() }}</div>
+    </a></div>
 </div>
 {% endblock content %}
