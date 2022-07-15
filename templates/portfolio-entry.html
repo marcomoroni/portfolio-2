@@ -5,15 +5,17 @@
 <div class="p-e-layout">
   <div class="nav-dots-container">
     {% set section = get_section(path="_index.md") %}
-    {% for other_page in section.pages %}
-    <div class="nav-dot {% if other_page.slug == page.slug %}this{% endif %}"></div>
+    {% for section_page in section.pages %}
+    <a class="nav-dot-container" href="{{ section_page.permalink }}">
+      <div class="nav-dot {% if section_page.slug == page.slug %}this{% endif %}"></div>
+    </a>
     {% endfor %}
   </div>
   <div class="p-e-layout-spacer-above-title"></div>
   {{ macros::portfolio_entry_header(page=page, semantic_title_element="h1") }}
   <div class="p-e-layout-spacer-below-title"></div>
-  <div class="p-e-content" date="{{ page.date | date(format="%B %Y") }}">
-  {{ page.content | safe }}
+  <div class="p-e-content" date="{{ page.date | date(format=" %B %Y") }}">
+    {{ page.content | safe }}
   </div>
   <script>
     // Add the date to the first `p`.
@@ -28,9 +30,14 @@
   </script>
 </div>
 <div class="nav">
-  <div><a class="nav-button" href="{{ config.base_url }}"><div class="nav-button-text">Home</div></a></div>
+  <div><a class="nav-button" href="{{ config.base_url }}">
+      <div class="nav-button-text">Home</div>
+    </a></div>
   {% if page.earlier %}
-  <div><a class="nav-button with-icon" href="{{ page.earlier.permalink }}"><div class="nav-button-text">Next</div><div class="nav-button-icon">{{ macros::right_arrow() }}</div></a></div>
+  <div><a class="nav-button with-icon" href="{{ page.earlier.permalink }}">
+      <div class="nav-button-text">Next</div>
+      <div class="nav-button-icon">{{ macros::right_arrow() }}</div>
+    </a></div>
   {% endif %}
 </div>
 {% endblock content %}

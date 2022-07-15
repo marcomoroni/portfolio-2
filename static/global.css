@@ -10,19 +10,19 @@
 }
 
 @font-face {
-	font-family: 'Readex Pro';
-	src: url(assets/fonts/ReadexPro.ttf) format("truetype-variations");
+    font-family: 'Readex Pro';
+    src: url(assets/fonts/ReadexPro.ttf) format("truetype-variations");
 }
 
 @font-face {
-	font-family: 'Overpass Mono';
-	src: url(assets/fonts/OverpassMono-Regular.ttf) format("truetype-variations");
+    font-family: 'Overpass Mono';
+    src: url(assets/fonts/OverpassMono-Regular.ttf) format("truetype-variations");
     font-weight: 400;
 }
 
 @font-face {
-	font-family: 'Overpass Mono';
-	src: url(assets/fonts/OverpassMono-SemiBold.ttf) format("truetype-variations");
+    font-family: 'Overpass Mono';
+    src: url(assets/fonts/OverpassMono-SemiBold.ttf) format("truetype-variations");
     font-weight: 600;
 }
 
@@ -55,7 +55,8 @@
 }
 
 /* Remove list styles (bullets/numbers). */
-ol, ul {
+ol,
+ul {
     list-style: none;
 }
 
@@ -74,12 +75,16 @@ textarea {
     white-space: revert;
 }
 
-span, em, strong {
+span,
+em,
+strong {
     all: unset;
 }
 
 /* Else there's some margin around. */
-img, iframe, svg {
+img,
+iframe,
+svg {
     display: block;
 }
 
@@ -91,13 +96,13 @@ img, iframe, svg {
 
 .cursor {
     position: fixed;
-	top: 0;
-	left: 0;
+    top: 0;
+    left: 0;
     width: 0px;
     height: 0px;
-	z-index: 999999;
-	pointer-events: none;
-	transition: none;
+    z-index: 999999;
+    pointer-events: none;
+    transition: none;
 }
 
 .cursor-icon {
@@ -106,8 +111,8 @@ img, iframe, svg {
     top: calc(var(--size) / 2 * -1);
     left: calc(var(--size) / 2 * -1);
     width: var(--size);
-	height: var(--size);
-	border-radius: 100%;
+    height: var(--size);
+    border-radius: 100%;
     border: calc(var(--size) / 2) solid var(--color-primary);
     transition: all 0.2s var(--custom-ease-out);
 }
@@ -123,23 +128,24 @@ img, iframe, svg {
 .cursor.hover-link .cursor-icon {
     --size: 18px;
     width: var(--size);
-	height: var(--size);
+    height: var(--size);
     border-width: 3px;
 }
 
-* { 
+* {
     cursor: none !important;
 }
 
-@media (pointer: none), (pointer: coarse) {
-    .cursor { 
+@media (pointer: none),
+(pointer: coarse) {
+    .cursor {
         display: none !important;
-        visibility: hidden; 
-        opacity: 0; 
+        visibility: hidden;
+        opacity: 0;
     }
 
     * {
-         cursor: auto !important;
+        cursor: auto !important;
     }
 }
 
@@ -242,7 +248,8 @@ a:hover {
     margin-left: var(--h-margin);
     margin-right: var(--h-margin);
     user-select: none;
-    font-variation-settings: 'wght' 400; /* Larger dots. */
+    /* Larger dots. */
+    font-variation-settings: 'wght' 400;
 }
 
 
@@ -404,7 +411,7 @@ a:hover {
 }
 
 .p-e-layout-spacer-above-title {
-    height: 220px;
+    height: 214px;
 }
 
 .p-e-layout-spacer-below-title {
@@ -413,8 +420,18 @@ a:hover {
 
 .nav-dots-container {
     display: flex;
-    gap: 14px;
-    margin-top: 17px;
+    margin-top: 11px;
+    gap: 2px;
+}
+
+.nav-dot-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    border: unset;
+    border-radius: 100px;
 }
 
 .nav-dot {
@@ -447,55 +464,55 @@ a:hover {
     margin-right: var(--margin);
 }
 
-.p-e-content > p,
-.p-e-content > h2,
-.p-e-content > ul,
+.p-e-content>p,
+.p-e-content>h2,
+.p-e-content>ul,
 .p-e-article-button-container {
     margin-left: max(var(--content-margin), calc((100% - var(--content-width)) / 2));
     margin-right: max(var(--content-margin), calc((100% - var(--content-width)) / 2));
 }
 
-.p-e-content > h2 {
+.p-e-content>h2 {
     font-variation-settings: 'wght' 600;
     font-size: 15px;
 }
 
-.p-e-content > ul {
+.p-e-content>ul {
     padding-left: 40px;
     list-style-type: disc;
 }
 
-.p-e-content > img {
+.p-e-content>img {
     max-width: min(calc(100% - var(--content-margin) * 2), var(--content-width));
     align-self: center;
     transition: all 1s cubic-bezier(0.1, 0.9, 0.18, 0.98);
 }
 
-.p-e-content > img.can-toggle-full-width:hover {
+.p-e-content>img.can-toggle-full-width:hover {
     transform: scale(1.02);
 }
 
-.p-e-content > img.full-width.can-toggle-full-width:hover {
+.p-e-content>img.full-width.can-toggle-full-width:hover {
     transform: scale(0.985);
 }
 
-.p-e-content > img.tall {
+.p-e-content>img.tall {
     width: 400px;
 }
 
-.p-e-content > img.full-width {
+.p-e-content>img.full-width {
     max-width: max(min(calc(100% - var(--content-margin) * 2), var(--content-width)), calc(100% - var(--p-e-content-divider) * 2));
 }
 
-.p-e-content > img.tall.full-width {
+.p-e-content>img.tall.full-width {
     width: min(calc(100% - var(--content-margin) * 2), var(--content-width));
 }
 
-.p-e-content > img.stretch {
+.p-e-content>img.stretch {
     width: min(calc(100% - var(--content-margin) * 2), var(--content-width));
 }
 
-.p-e-content > img.stretch.full-width {
+.p-e-content>img.stretch.full-width {
     width: max(min(calc(100% - var(--content-margin) * 2), var(--content-width)), calc(100% - var(--p-e-content-divider) * 2));
 }
 
@@ -511,36 +528,36 @@ a:hover {
     user-select: none;
 }
 
-.p-e-content > p + img,
-.p-e-content > img + p,
-.p-e-content > img + img,
-.p-e-content > h2 + img,
-.p-e-content > .p-e-article-button-container + img {
+.p-e-content>p+img,
+.p-e-content>img+p,
+.p-e-content>img+img,
+.p-e-content>h2+img,
+.p-e-content>.p-e-article-button-container+img {
     margin-top: var(--p-e-content-divider);
 }
 
-.p-e-content > p + .p-e-article-button-container,
-.p-e-content > .p-e-article-button-container + p {
+.p-e-content>p+.p-e-article-button-container,
+.p-e-content>.p-e-article-button-container+p {
     margin-top: 13px;
 }
 
-.p-e-content > p + h2,
-.p-e-content > ul + h2,
-.p-e-content > .p-e-article-button-container + h2,
-.p-e-content > img + h2 {
+.p-e-content>p+h2,
+.p-e-content>ul+h2,
+.p-e-content>.p-e-article-button-container+h2,
+.p-e-content>img+h2 {
     margin-top: 55px;
 }
 
-.p-e-content > h2 + p {
+.p-e-content>h2+p {
     margin-top: 21px;
 }
 
-.p-e-content > p + ul,
-.p-e-content > ul + p {
+.p-e-content>p+ul,
+.p-e-content>ul+p {
     margin-top: 11px;
 }
 
-.p-e-content > ul + .p-e-article-button-container {
+.p-e-content>ul+.p-e-article-button-container {
     margin-top: 24px;
 }
 
