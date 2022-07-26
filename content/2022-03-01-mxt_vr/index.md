@@ -9,6 +9,8 @@ opt_preview_img = ["a303_mockup_narration.png", "inverted", 5, 2]
 
 The largest project I worked on while at [MXT](https://mxt.co.uk/) was a simulation of what the area around of one of the world’s most important World Heritage sites would look like before and after a very important project (which I can't reveal yet). Our job was to show the striking difference between the present and the future to users that may have no experience with VR at all.
 
+Please note that the details I can provided are limited at this point in time.
+
 The simulation uses real-world data to build realistic traffic and noise that would come with it. We decided to use Unreal Engine even though none of us had experience with it.
 
 The UI has been carefully designed to fit two seemingly contradictory gameplay flows: a guided tour and free roaming. Despite the challenge, the UI has always been praised during our user testings.
