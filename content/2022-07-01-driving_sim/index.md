@@ -33,6 +33,8 @@ Here are some other pieces:
 
 {{ image(src="edit_gantry.png", can_toggle_full_width=true) }}
 
+{{ image(src="second_monitor.png", can_toggle_full_width=true) }}
+
 {{ image(src="details_add_button.png", can_toggle_full_width=true) }}
 
 {{ image(src="details_mini_map.png", can_toggle_full_width=true) }}
