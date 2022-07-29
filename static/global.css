@@ -532,6 +532,7 @@ a:hover {
 .p-e-content>img+p,
 .p-e-content>img+img,
 .p-e-content>h2+img,
+.p-e-content>ul+img,
 .p-e-content>.p-e-article-button-container+img {
     margin-top: var(--p-e-content-divider);
 }
