@@ -25,8 +25,7 @@ A few notes on the design:
 * The typeface is Inter, which is pretty standard nowadays.
 * All icons are custom made.
 * It's minimalist but ergonomic.
-* The first iterations looked like a video chat app, maybe you noticed it!
-* There much though behind the 'Change map' button: it serves as way to start and end a session. Instead of an 'End session' and unnecessary navigation overhead, just change map. If a new user is going to be the trainee, just change to a new clean scene, ready to be jumped in.
+* There much though behind the 'Change map' button: it also serves as way to start and end a 'session'. Instead of starting and ending sessions, just change map: you'll have a clean new scene!
 * I'm still a programmer! This means I know the tools and the limitations available, and the mock-ups are always assured to be achievable.
 
 Here are some other pieces:
