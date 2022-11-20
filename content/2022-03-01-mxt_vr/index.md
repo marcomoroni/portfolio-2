@@ -1,21 +1,19 @@
 +++
-title = "Free-to-roam visual and audible immersive experience of one of the world’s most important World Heritage sites"
-slug = "mxt_vr"
+title = "What if there were no cars passing by Stonehenge?"
+slug = "stonehenge_vr"
 template = "portfolio-entry.html"
 [extra]
 tags = ["XR", "UI / UX", "Unreal Engine"]
 opt_preview_img = ["a303_mockup_narration.png", "inverted", 5, 2]
 +++
 
-The largest project I worked on while at [MXT](https://mxt.co.uk/) was a simulation of what the area around of one of the world’s most important World Heritage sites would look like before and after a very important project (which I can't reveal yet). Our job was to show the striking difference between the present and the future to users that may have no experience with VR at all.
+The largest project I worked on while at [MXT](https://mxt.co.uk/) was a simulation of what the area around Stonehenge would look like if cars would not be driving close by. [National Highways](https://nationalhighways.co.uk/) is planning to build an underground tunnel (A303) and our job was to show the striking difference between the present and a future with this new hidden highway. This is a VR experience for persons that may have no experience with VR at all.
 
-Please note that the details I can provided are limited at this point in time.
-
-The simulation uses real-world data to build realistic traffic and noise that would come with it. We decided to use Unreal Engine even though none of us had experience with it.
+The simulation uses real-world data to build realistic traffic and noise that would come with it, before and after the tunnel. We decided to use Unreal Engine even though none of us had experience with it.
 
 The UI has been carefully designed to fit two seemingly contradictory gameplay flows: a guided tour and free roaming. Despite the challenge, the UI has always been praised during our user testings.
 
-UI was fully on me, from design to implementation. What would a user with potentially no computer skills see once the headset is on?
+UI was fully on me, from design to implementation (in this case, that means the whole gameplay). What would a user with potentially no computer skills see once the headset is on?
 
 ## Mock-ups
 
