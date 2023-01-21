@@ -7,7 +7,7 @@ tags = ["XR", "UI / UX", "Unreal Engine"]
 opt_preview_img = ["a303_mockup_narration.png", "inverted", 5, 2]
 +++
 
-{{ video(src="A303_VR.mp4", full_width=true) }}
+{{ video(src="content/2023-01-01-stonehenge/A303_VR.mp4", full_width=true) }}
 
 The largest project I worked on while at [MXT](https://mxt.co.uk/) was a simulation of what the area around Stonehenge would look like if cars would not be driving close by. [National Highways](https://nationalhighways.co.uk/) is planning to build an underground tunnel (A303) and our job was to show the striking difference between the present and a future with this new hidden highway. This is a VR experience for persons that may have no experience with VR at all.
 
@@ -51,7 +51,7 @@ As more and more feature were added we reached a point where orchestrating the v
 
 Later on we were asked to make a desktop version. The time allocated for this was much more limited but all functionalities are there.
 
-{{ video(src="A303_desktop.mp4", full_width=true) }}
+{{ video(src="content/2023-01-01-stonehenge/A303_desktop.mp4", full_width=true) }}
 
 ## An idea I had too late
 
