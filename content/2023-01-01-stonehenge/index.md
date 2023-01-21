@@ -1,6 +1,6 @@
 +++
 title = "What if there were no cars passing by Stonehenge?"
-slug = "stonehenge_vr"
+slug = "stonehenge"
 template = "portfolio-entry.html"
 [extra]
 tags = ["XR", "UI / UX", "Unreal Engine"]
