@@ -482,7 +482,8 @@ a:hover {
     list-style-type: disc;
 }
 
-.p-e-content>img {
+.p-e-content>img,
+.p-e-content>video {
     max-width: min(calc(100% - var(--content-margin) * 2), var(--content-width));
     align-self: center;
     transition: all 1s cubic-bezier(0.1, 0.9, 0.18, 0.98);
@@ -500,7 +501,8 @@ a:hover {
     width: 400px;
 }
 
-.p-e-content>img.full-width {
+.p-e-content>img.full-width,
+.p-e-content>video.full-width {
     max-width: max(min(calc(100% - var(--content-margin) * 2), var(--content-width)), calc(100% - var(--p-e-content-divider) * 2));
 }
 
@@ -533,6 +535,9 @@ a:hover {
 .p-e-content>img+img,
 .p-e-content>h2+img,
 .p-e-content>ul+img,
+.p-e-content>video+p,
+.p-e-content>p+video,
+.p-e-content>h2+video,
 .p-e-content>.p-e-article-button-container+img {
     margin-top: var(--p-e-content-divider);
 }
@@ -545,7 +550,8 @@ a:hover {
 .p-e-content>p+h2,
 .p-e-content>ul+h2,
 .p-e-content>.p-e-article-button-container+h2,
-.p-e-content>img+h2 {
+.p-e-content>img+h2,
+.p-e-content>video+h2 {
     margin-top: 55px;
 }
 
