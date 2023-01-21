@@ -45,7 +45,7 @@ Implementation was for the most part what you would expect from a gameplay progr
 
 UI needs _shapes_, like rectangles with rounded corners. I made a lot of shader-based shapes using a technique called raymarching distance field. This method makes shapes that are much more visually pleasing than sprites, because no matter how close you are, edges are always crisp and you won't see any pixel. And it's easier to edit colours and sizes at runtime.
 
-As more and more feature were added we reached a point where orchestrating the various parts via classic events became quite difficult. I decided to centralize most logic in one place, using an architecture similar to Elm. Elm if fully functional, so it's not feasible to implement something identical in Unreal, but I kept what allowed to reduce errors and help logic readability: Actors should not interact with each other but send 'messages' to a Manager; this Manager then changes the various other Actors; in particular, it changes them so they would never send invalid messages.
+As more and more features were added we reached a point where orchestrating the various parts via classic events became quite difficult. I decided to centralize most logic in one place, using an architecture similar to Elm. Elm if fully functional, so it's not feasible to implement something identical in Unreal, but I kept what allowed to reduce errors and help logic readability: Actors should not interact with each other but send 'messages' to a Manager; this Manager then changes the various other Actors; in particular, it changes them so they would never send invalid messages.
 
 ## Desktop version
 
