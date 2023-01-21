@@ -4,7 +4,7 @@ slug = "stonehenge_vr"
 template = "portfolio-entry.html"
 [extra]
 tags = ["XR", "UI / UX", "Unreal Engine"]
-opt_preview_img = ["a303_mockup_narration.png", "inverted", 5, 2]
+opt_preview_img = ["post_map_high_contrast.png", "inverted", 3, 1]
 +++
 
 {{ video(src="content/2023-01-01-stonehenge/A303_VR.mp4", full_width=true) }}
