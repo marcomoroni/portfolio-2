@@ -21,7 +21,7 @@ This is the semantic structure:
 A few notes on the design:
 
 * At a glance, your attention is not drawn anywhere (except perhaps the scene view): there are no primary actions and for this reason no buttons or other elements have a prominent style.
-* I don't use an accent colour, but contrast instead. I'm not fond of accent colours in unbranded UIs — this makes designs more challenging.
+* I don't use an accent colour, but contrast instead. I'm not fond of accent colours in unbranded UIs — this makes designs more challenging but arguably more aesthetically pleasing.
 * The typeface is Inter, which is pretty standard nowadays.
 * All icons are custom made.
 * It's minimalist but ergonomic.
