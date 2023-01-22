@@ -3,7 +3,7 @@ title = "Jurassic World Aftermath"
 slug = "jw"
 template = "portfolio-entry.html"
 [extra]
-tags = ["published", "XR", "UI / UX", "Unity", "C#"]
+tags = ["published", "XR", "UI", "Unity", "C#"]
 opt_preview_img = ["jw.jpg", "default", 2, 4]
 +++
 

@@ -3,7 +3,7 @@ title = "A driving simulator for traffic officers training"
 slug = "driving_sim"
 template = "portfolio-entry.html"
 [extra]
-tags = ["UI / UX", "Unity", "C#", "Hardware"]
+tags = ["UX", "UI", "Unity", "C#"]
 +++
 
 On one side we have a traffic officer trainee with a VR headset sitting in a car-like rig which can simulate the movements and rumbles of a real one; on the other side an instructor using a connected PC with which they can manipulate the virtual environment to create custom scenarios with car accidents, high traffic, etc.
