@@ -15,9 +15,7 @@ The simulation uses real-world data to build realistic traffic and noise that wo
 
 The UI has been carefully designed to fit two seemingly contradictory gameplay flows: a guided tour and free roaming. Despite the challenge, the UI has always been praised during our user testings.
 
-Later on, we also added a desktop version.
-
-UX was fully on me, from design to the UI implementation (in this case, that means the whole gameplay). What would a user with potentially no computer skills see once the headset is on?
+UX was fully on me, from design to the UI implementation. (In this case, that means the whole gameplay.) What would a user with potentially no computer skills see once the headset is on?
 
 ## User experience
 
@@ -55,6 +53,6 @@ Later on we were asked to make a desktop version. The time allocated for this wa
 
 ## An idea I had too late
 
-Whenever possible, I avoid explicit tutorials, especially when text based. Users never read text. Unfortunately, I didn't find a satisfactory way to be fully clear of them in VR, but the final implementation still has a simple, gradual and non-obstructive introduction to the different gameplay features. One aspect that went through many iterations was how to have the user discover the controls on the two hands (raise them to the correct position so that they can be seen — yes, for many users it's not obvious to look at their hands) and teach how to use them (move the laser to point to an element and select it).
+Whenever possible, I avoid explicit tutorials, especially text based because those require too much user attention. Unfortunately, I didn't find a satisfactory way to be fully clear of them in VR, but the final implementation still has a simple, gradual and non-obstructive onboarding to the different gameplay features. One aspect that went through many iterations was how to have the user discover the controls on the two hands (raise them to the correct position so that they can be seen — yes, for many users it's not obvious to look at their hands) and teach how to use them (move the laser to point to an element and select it).
 
 Too late in development I came up with an idea that I'd love to explore further: how about a *mirror*? The user will immediately understand that the avatar in front of him or her is mimicking his or her movements. What's that shiny thing on the mirrored hand? Better have a look at my own hand, there must be something interesting there! This solution seems very promising — it requires very low user attention and no text.
