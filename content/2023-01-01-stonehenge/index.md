@@ -3,7 +3,7 @@ title = "What if there were no cars passing by Stonehenge?"
 slug = "stonehenge"
 template = "portfolio-entry.html"
 [extra]
-tags = ["XR", "UX", "UI", "Unreal Engine"]
+tags = ["XR", "UX", "UI", "Unreal Engine", "Shaders"]
 opt_preview_img = ["post_map_high_contrast.png", "inverted", 3, 1]
 +++
 
