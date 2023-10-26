@@ -501,6 +501,10 @@ a:hover {
     width: 400px;
 }
 
+.p-e-content>img.border {
+    border: 1px solid #3131313d;
+}
+
 .p-e-content>img.full-width,
 .p-e-content>video.full-width {
     max-width: max(min(calc(100% - var(--content-margin) * 2), var(--content-width)), calc(100% - var(--p-e-content-divider) * 2));

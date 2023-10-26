@@ -57,5 +57,5 @@ Finally, you can change the overall generation rules of a city, e.g. the amount 
 
 ## Academic poster
 
-{{ image(src="poster_front.png", can_toggle_full_width=true) }}
-{{ image(src="poster_back.png", can_toggle_full_width=true) }}
+{{ image(src="poster_front.png", can_toggle_full_width=true, border=true) }}
+{{ image(src="poster_back.png", can_toggle_full_width=true, border=true) }}
