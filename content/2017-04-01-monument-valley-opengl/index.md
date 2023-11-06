@@ -26,7 +26,11 @@ Finally, I worked with frames to allow multiple ones to work at the same time: I
 {{ article_buttons(buttons=["Source code", "https://github.com/MarcoMoroni/CG_cw2", "Report", "https://github.com/MarcoMoroni/CG_cw2/blob/master/Report/report.pdf"]) }}
 
 {{ image(src="screen04.png", stretch=true, can_toggle_full_width=true) }}
+
 {{ image(src="screen06.png", stretch=true, can_toggle_full_width=true) }}
+
 {{ image(src="screen05.png", stretch=true, can_toggle_full_width=true) }}
+
 {{ image(src="screen02.png", stretch=true, can_toggle_full_width=true) }}
+
 {{ image(src="screen07.png", stretch=true, can_toggle_full_width=true) }}

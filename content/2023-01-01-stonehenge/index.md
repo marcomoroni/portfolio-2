@@ -22,7 +22,9 @@ UX was fully on me, from design to the UI implementation. (In this case, that me
 Much has changed since the initial mock-ups but some cardinal ideas persisted: your left hand would function as a tablet-like interface, while the right as a laser to point and select interactive elements; keep diegetic UI to a minimum; the user should never feel lost or confused on what to do next; have as few explicit tutorials a possible.
 
 {{ image(src="a303_mockup_lh.png", can_toggle_full_width=true) }}
+
 {{ image(src="a303_mockup_minimap.png", can_toggle_full_width=true) }}
+
 {{ image(src="a303_mockup_narration.png", can_toggle_full_width=true) }}
 
 There were so many details I had to consider. The following are just a few.

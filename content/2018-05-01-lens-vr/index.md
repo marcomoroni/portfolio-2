@@ -19,9 +19,15 @@ I worked in a team of six people, and I was responsible for:
 It was awarded as the second best group project of the year, but this doesn't mean everything went perfectly. For me, the biggest problem we had during the development was that we were not entirely sure what was the final use of it: I think it's important for people to be motivated to know were their project will be used and why is it important. In any case, a positive attitude sometimes it's all that's needed!
 
 {{ image(src="capture05.png", stretch=true, can_toggle_full_width=true) }}
+
 {{ image(src="capture06.png", stretch=true, can_toggle_full_width=true) }}
+
 {{ image(src="capture03.png", stretch=true, can_toggle_full_width=true) }}
+
 {{ image(src="capture01.png", stretch=true, can_toggle_full_width=true) }}
+
 {{ image(src="capture02.png", stretch=true, can_toggle_full_width=true) }}
+
 {{ image(src="capture04.png", stretch=true, can_toggle_full_width=true) }}
+
 {{ image(src="capture08.png", stretch=true, can_toggle_full_width=true) }}

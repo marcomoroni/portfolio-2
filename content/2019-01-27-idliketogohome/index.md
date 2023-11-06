@@ -8,7 +8,9 @@ opt_preview_img = ["h1.png", "default", 2, 4]
 +++
 
 {{ image(src="h1.png", stretch=true, full_width=true, can_toggle_full_width=true) }}
+
 {{ image(src="h2.png", stretch=true, full_width=true, can_toggle_full_width=true) }}
+
 {{ image(src="h3.png", stretch=true, full_width=true, can_toggle_full_width=true) }}
 
 I made *I'd like to go home* during the [Global Game Jam](https://globalgamejam.org/) 2019, where you have create a game in 48 hours.

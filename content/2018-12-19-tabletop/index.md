@@ -18,6 +18,9 @@ The engine based around two concepts: *cards* and *decks*. Decks hold parameters
 I built a handy Editor Window to manage the cards that will be added to the scene; it was soon clear that it was a necessary tool to have, otherwise every card asset would have been needed to be changed individually. It consists on a database where cards can be added, deleted or duplicated.
 
 {{ image(src="engine01.gif", stretch=true, can_toggle_full_width=true) }}
+
 {{ image(src="gizmos.png", stretch=true, can_toggle_full_width=true) }}
+
 {{ image(src="database.png", stretch=true, can_toggle_full_width=true) }}
+
 {{ image(src="inspector.png", stretch=true, can_toggle_full_width=true) }}
