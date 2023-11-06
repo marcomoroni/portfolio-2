@@ -20,5 +20,7 @@ Before this project, I used to use Unity for very simple tasks, without having a
 {{ article_buttons(buttons=["Website & download", "https://marcomoroni.github.io/azucena/", "Source code", "https://github.com/marcomoroni/azucena"]) }}
 
 {{ image(src="capture_04.png", stretch=true, can_toggle_full_width=true) }}
+
 {{ image(src="capture_02.png", stretch=true, can_toggle_full_width=true) }}
+
 {{ image(src="capture_03.png", stretch=true, can_toggle_full_width=true) }}

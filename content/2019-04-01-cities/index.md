@@ -10,13 +10,17 @@ opt_preview_img = ["ortho-02.png", "inverted", 4, 2]
 This was the Honours Project for my degree in Games Development at Edinburgh Napier University. I studied and classified the different procedural content generation (PCG) techniques and used them to create cities similar to the ones drawn by [Minna O.](https://nokkasili.tumblr.com/):
 
 {{ image(src="minna02.jpg", stretch=true) }}
+
 {{ image(src="minna03.jpg", stretch=true) }}
+
 {{ image(src="minna04.jpg", stretch=true) }}
+
 {{ image(src="minna05.jpg", stretch=true) }}
 
 The following are screenshots of the generated artefacts (in the app they would be 3D and interactive). I was extremely lucky to have Minna helping me throughout the project — she made all the assets I needed!
 
 {{ image(src="perspective-01.png", stretch=true, full_width=true, can_toggle_full_width=true) }}
+
 {{ image(src="perspective-03.png", stretch=true, full_width=true, can_toggle_full_width=true) }}
 
 And a 2D one (with an orthographic projection):
@@ -58,4 +62,5 @@ Finally, you can change the overall generation rules of a city, e.g. the amount 
 ## Academic poster
 
 {{ image(src="poster_front.png", can_toggle_full_width=true, border=true) }}
+
 {{ image(src="poster_back.png", can_toggle_full_width=true, border=true) }}
